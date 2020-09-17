@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/portalOverviewFragment">
+
     <fragment
         android:id="@+id/portalOverviewFragment"
         android:name="com.nonamer777.madlevel3task2.PortalOverviewFragment"
@@ -17,9 +19,5 @@
         android:id="@+id/addPortalFragment"
         android:name="com.nonamer777.madlevel3task2.AddPortalFragment"
         android:label="fragment_add_portal"
-        tools:layout="@layout/fragment_add_portal" >
-        <action
-            android:id="@+id/action_addPortalFragment_to_portalOverviewFragment"
-            app:destination="@id/portalOverviewFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_add_portal" />
 </navigation>
