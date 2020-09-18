@@ -6,7 +6,7 @@
     android:id="@+id/clPortalOverview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PortalOverviewFragment" >
+    tools:context=".fragments.PortalOverviewFragment" >
 
     <TextView
         android:id="@+id/tvTitle"

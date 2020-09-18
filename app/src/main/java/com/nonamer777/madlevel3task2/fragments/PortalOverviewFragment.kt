@@ -1,4 +1,4 @@
-package com.nonamer777.madlevel3task2
+package com.nonamer777.madlevel3task2.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,10 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.nonamer777.madlevel3task2.MainActivity
+import com.nonamer777.madlevel3task2.R
 import com.nonamer777.madlevel3task2.model.Portal
-import com.nonamer777.madlevel3task2.model.PortalAdapter
 import kotlinx.android.synthetic.main.fragment_portal_overview.*
 
 /** A simple [Fragment] subclass that holds the overview of portals. */

@@ -6,7 +6,7 @@
     android:id="@+id/clAddPortal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddPortalFragment" >
+    tools:context=".fragments.AddPortalFragment" >
 
     <TextView
         android:id="@+id/label_create_portal"
