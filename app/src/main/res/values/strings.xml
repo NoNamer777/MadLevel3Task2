@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">MAD - Level 3: Task 2</string>
     <string name="tv_title">My Portals</string>
+    <string name="btn_add_portal">add portal</string>
+    <string name="input_url_placeholder">URL</string>
+    <string name="input_portal_name_placeholder">Title</string>
+    <string name="header_create_portal">Create Portal</string>
+    <string name="not_valid_portal">Please fill in the portal data</string>
 </resources>
