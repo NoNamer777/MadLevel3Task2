@@ -4,11 +4,21 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.nonamer777.madlevel3task2.model.Portal
+import com.nonamer777.madlevel3task2.model.PortalAdapter
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_portal_overview.*
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
+
+    companion object {
+        val portals = arrayListOf<Portal>()
+        val portalAdapter = PortalAdapter(portals)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

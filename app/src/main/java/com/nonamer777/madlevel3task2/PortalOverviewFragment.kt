@@ -14,9 +14,6 @@ import kotlinx.android.synthetic.main.fragment_portal_overview.*
 /** A simple [Fragment] subclass that holds the overview of portals. */
 class PortalOverviewFragment : Fragment() {
 
-    private val portals = arrayListOf<Portal>()
-    private val portalAdapter = PortalAdapter(portals)
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
