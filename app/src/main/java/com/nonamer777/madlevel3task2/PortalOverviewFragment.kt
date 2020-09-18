@@ -26,6 +26,17 @@ class PortalOverviewFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         initViews()
+
+        // Add Portal to the list of portals if they're present in the arguments
+        val portalName = arguments?.getString(ARG_PORTAL_NAME)
+        val portalUrl = arguments?.getString(ARG_PORTAL_URL)
+
+        if (portalName != null && portalUrl != null) {
+            val portal = Portal(portalName, portalUrl)
+
+            MainActivity.portals.add(portal)
+            MainActivity.portalAdapter.notifyDataSetChanged()
+        }
     }
 
     /** Initializes the view, connects the Portal Adapter to the RecyclerView. */
