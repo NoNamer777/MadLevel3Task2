@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.nonamer777.madlevel3task2.model.Portal
@@ -29,7 +30,13 @@ class PortalOverviewFragment : Fragment() {
 
     /** Initializes the view, connects the Portal Adapter to the RecyclerView. */
     private fun initViews() {
-        rvPortals.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
-        rvPortals.adapter = portalAdapter
+        rvPortals.layoutManager = GridLayoutManager(
+            context,
+            2,
+            GridLayoutManager.VERTICAL,
+            false
+        )
+
+        rvPortals.adapter = MainActivity.portalAdapter
     }
 }
